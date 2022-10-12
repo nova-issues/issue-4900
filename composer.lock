@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8921043989389b4a525def7a8d4f99a8",
+    "content-hash": "658cc92b8b94438818f1980af6b7b2ea",
     "packages": [
         {
             "name": "brick/math",
@@ -827,6 +827,42 @@
                 }
             ],
             "time": "2022-06-18T20:57:19+00:00"
+        },
+        {
+            "name": "example/demo-tool",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/DemoTool",
+                "reference": "9de975f8fafd32180a79a4ed3ffece10f4c1b1eb"
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Example\\DemoTool\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Example\\DemoTool\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova tool.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "fruitcake/php-cors",
